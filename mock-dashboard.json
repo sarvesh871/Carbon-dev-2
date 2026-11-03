@@ -1,0 +1,79 @@
+{
+  "summary": {
+    "totalBills": 24,
+    "completedBills": 20,
+    "failedBills": 2,
+    "processingBills": 2,
+    "totalCarbonEmission": 4850,
+    "totalAmountPaid": 12450.50,
+    "averageMonthlyCarbon": 404.16
+  },
+  "carbonTrend": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "datasets": [
+      {
+        "label": "Carbon Emissions (kgCO2e)",
+        "data": [350, 320, 310, 280, 290, 380, 420, 450, 410, 390, 340, 360]
+      }
+    ]
+  },
+  "spendingTrend": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "datasets": [
+      {
+        "label": "Cost (USD)",
+        "data": [950, 890, 850, 750, 800, 1100, 1250, 1350, 1200, 1150, 980, 1050]
+      }
+    ]
+  },
+  "billDistribution": {
+    "labels": ["Electricity", "Gas", "Water"],
+    "datasets": [
+      {
+        "data": [65, 25, 10]
+      }
+    ]
+  },
+  "recentBills": [
+    {
+      "billId": "1234-abcd",
+      "billingMonth": "2026-06",
+      "billType": "electricity",
+      "carbonEmission": 420,
+      "billAmount": 1250.00,
+      "currency": "USD",
+      "processingStatus": "COMPLETED",
+      "updatedAt": "2026-07-10T10:00:00Z"
+    },
+    {
+      "billId": "5678-efgh",
+      "billingMonth": "2026-07",
+      "billType": "gas",
+      "carbonEmission": 150,
+      "billAmount": 450.00,
+      "currency": "USD",
+      "processingStatus": "PROCESSING",
+      "updatedAt": "2026-07-15T14:30:00Z"
+    },
+    {
+      "billId": "9101-ijkl",
+      "billingMonth": "2026-05",
+      "billType": "electricity",
+      "carbonEmission": 0,
+      "billAmount": 0,
+      "currency": "USD",
+      "processingStatus": "FAILED",
+      "updatedAt": "2026-06-10T09:15:00Z"
+    },
+    {
+      "billId": "1121-mnop",
+      "billingMonth": "2026-05",
+      "billType": "water",
+      "carbonEmission": 5,
+      "billAmount": 85.50,
+      "currency": "USD",
+      "processingStatus": "COMPLETED",
+      "updatedAt": "2026-06-05T11:20:00Z"
+    }
+  ]
+}
